@@ -12,9 +12,13 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array
      */
+    // php artisan event:generate
+    // app\Events\QuoteCreated.php
+    // app\Listeners\CreateLogEntry.php
     protected $listen = [
-        'App\Events\SomeEvent' => [
-            'App\Listeners\EventListener',
+        'App\Events\QuoteCreated' => [
+            'App\Listeners\CreateLogEntry',
+            'App\Listeners\SendUserNotification'
         ],
     ];
 

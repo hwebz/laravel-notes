@@ -57,6 +57,10 @@
                     <input type="text" name="author" id="author" placeholder="Your Name" />
                 </div>
                 <div class="input-group">
+                    <label for="email">Your Email</label>
+                    <input type="text" name="email" id="email" placeholder="Your Email" />
+                </div>
+                <div class="input-group">
                     <label for="author">Your Quote</label>
                     <textarea name="quote" id="quote" rows="5" placeholder="Your Name"></textarea>
                 </div>
